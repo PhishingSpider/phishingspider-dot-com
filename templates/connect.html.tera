@@ -1,0 +1,16 @@
+{% extends "base" %}
+
+{% block content %}
+<h1>Connect with PhishingSpider</h1>
+
+<p><a href="https://github.com/PhishingSpider">GitHub</a></p>
+
+<p><a href="https://x.com/PhishingSpider">X/Twitter</a></p>
+
+<p><a href="https://www.facebook.com/PhishingSpider">Facebook</a></p>
+
+<p><a href="https://phishingspider.square.site/">Merch store</a></p>
+
+
+
+{% endblock content %}

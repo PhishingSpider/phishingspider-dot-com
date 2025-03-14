@@ -1,7 +1,7 @@
 {% extends "base" %}
 
 {% block content %}
-
-
+<h1>About PhishingSpider</h1>
+Phishing Spider LLC (dba PhishingSpider) is a cybersecurity company in Bartlesville, Oklahoma. 
 
 {% endblock content %}
