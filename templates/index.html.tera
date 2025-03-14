@@ -1,0 +1,7 @@
+{% extends "base" %}
+
+{% block content %}
+    <h1>Defend the things worth defending</h1>
+    <h3>Security-conscious technology enables you to be better prepared within the modern threat landscape.</h3>
+    <p><a href="/about">Learn more</a> about PhishingSpider and <a href="/connect">connect</a> with us.</p>
+{% endblock content %}

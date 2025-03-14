@@ -1,20 +1,18 @@
 #[macro_use] extern crate rocket;
+use rocket_dyn_templates::{Template, context};
+use tera::Tera;
 
 #[get("/")]
-fn index() -> &'static str {
-    "hello phish!!"
+fn index() -> Template {
+    Template::render("index", context! {
+        title: "Home"
+    })
 }
-
-#[get("/about")]
-fn about() -> &'static str {
-    "<h1>About PhishingSpider</h1><br>Phishing Spider LLC is a security-conscious tech company based out of Bartlesville, Oklahoma."
-}
-
-
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index, about])
+    rocket::build().mount("/", routes![index]).attach(Template::fairing())
 }
+
 
 
