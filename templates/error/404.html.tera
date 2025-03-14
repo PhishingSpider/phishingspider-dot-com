@@ -1,0 +1,6 @@
+{% extends "base" %}
+
+{% block content %}
+<h1>404 error: There's nothing here. 🕸️</h1>
+The page at <strong>{{ uri }}</strong> does not exist!
+{% endblock content %}
